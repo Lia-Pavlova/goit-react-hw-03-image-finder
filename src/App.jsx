@@ -102,8 +102,8 @@ class App extends Component {
           <Loader
             type="BallTriangle"
             color="#00BFFF"
-            height={200}
-            width={200}
+            height={50}
+            width={50}
             className={s.Loader}
           />
         )}
