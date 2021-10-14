@@ -58,10 +58,12 @@ class App extends Component {
         }));
       })
       .then(() => {
-        window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior: "smooth",
-        });
+        if (this.state.currentPage > 2) {
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth",
+          });
+        }
       })
       .catch(() => {
         toast.info("Try again!", {
